@@ -11,7 +11,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_Use_CustomView_As_RootView" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MyView" customModule="Swift_Use_CustomView_As_RootView" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -27,13 +27,13 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fOp-0E-2sP">
                                         <rect key="frame" x="22.5" y="50.5" width="51" height="31"/>
                                         <connections>
-                                            <action selector="toggleLightMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="SMe-BQ-a0W"/>
+                                            <action selector="toggleLightMode:" destination="8bC-Xf-vdC" eventType="valueChanged" id="5wB-bT-XuH"/>
                                         </connections>
                                     </switch>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minimumValue="10" maximumValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="CGY-O7-J0x">
                                         <rect key="frame" x="0.0" y="111.5" width="94" height="32"/>
                                         <connections>
-                                            <action selector="changeMessageLabelFontSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="ByI-BR-2tK"/>
+                                            <action selector="changeMessageLabelFontSize:" destination="8bC-Xf-vdC" eventType="valueChanged" id="Nwu-xf-efO"/>
                                         </connections>
                                     </stepper>
                                 </subviews>
@@ -45,12 +45,12 @@
                             <constraint firstItem="1E7-ff-K3e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="py8-4h-QHH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="fontSizeStepper" destination="CGY-O7-J0x" id="wef-53-uy8"/>
+                            <outlet property="lightSwitch" destination="fOp-0E-2sP" id="ENP-Rq-dDb"/>
+                            <outlet property="messageLabel" destination="6Uc-x5-ccs" id="ZCE-Pb-yoo"/>
+                        </connections>
                     </view>
-                    <connections>
-                        <outlet property="fontSizeStepper" destination="CGY-O7-J0x" id="Mj9-IO-wS2"/>
-                        <outlet property="lightSwitch" destination="fOp-0E-2sP" id="VSk-hA-Veb"/>
-                        <outlet property="messageLabel" destination="6Uc-x5-ccs" id="j0Z-y6-wwe"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
