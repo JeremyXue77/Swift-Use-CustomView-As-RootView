@@ -14,6 +14,10 @@
 		5EC2BFE6243189E70054D7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC2BFE5243189E70054D7E5 /* Assets.xcassets */; };
 		5EC2BFE9243189E70054D7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC2BFE7243189E70054D7E5 /* LaunchScreen.storyboard */; };
 		5EC2BFF124318E780054D7E5 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2BFF024318E780054D7E5 /* MyView.swift */; };
+		5EC2BFF3243196A90054D7E5 /* MyNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2BFF2243196A90054D7E5 /* MyNibView.swift */; };
+		5EC2BFF5243196B20054D7E5 /* MyNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EC2BFF4243196B20054D7E5 /* MyNibView.xib */; };
+		5EC2BFF7243197230054D7E5 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2BFF6243197230054D7E5 /* NibLoadable.swift */; };
+		5EC2BFF92431985F0054D7E5 /* NibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2BFF82431985F0054D7E5 /* NibViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		5EC2BFE8243189E70054D7E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EC2BFEA243189E70054D7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EC2BFF024318E780054D7E5 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		5EC2BFF2243196A90054D7E5 /* MyNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNibView.swift; sourceTree = "<group>"; };
+		5EC2BFF4243196B20054D7E5 /* MyNibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyNibView.xib; sourceTree = "<group>"; };
+		5EC2BFF6243197230054D7E5 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		5EC2BFF82431985F0054D7E5 /* NibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 				5EC2BFE7243189E70054D7E5 /* LaunchScreen.storyboard */,
 				5EC2BFEA243189E70054D7E5 /* Info.plist */,
 				5EC2BFF024318E780054D7E5 /* MyView.swift */,
+				5EC2BFF2243196A90054D7E5 /* MyNibView.swift */,
+				5EC2BFF4243196B20054D7E5 /* MyNibView.xib */,
+				5EC2BFF6243197230054D7E5 /* NibLoadable.swift */,
+				5EC2BFF82431985F0054D7E5 /* NibViewController.swift */,
 			);
 			path = "Swift-Use-CustomView-As-RootView";
 			sourceTree = "<group>";
@@ -128,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC2BFF5243196B20054D7E5 /* MyNibView.xib in Resources */,
 				5EC2BFE9243189E70054D7E5 /* LaunchScreen.storyboard in Resources */,
 				5EC2BFE6243189E70054D7E5 /* Assets.xcassets in Resources */,
 				5EC2BFE4243189E40054D7E5 /* Main.storyboard in Resources */,
@@ -141,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC2BFF92431985F0054D7E5 /* NibViewController.swift in Sources */,
+				5EC2BFF3243196A90054D7E5 /* MyNibView.swift in Sources */,
 				5EC2BFF124318E780054D7E5 /* MyView.swift in Sources */,
 				5EC2BFE1243189E40054D7E5 /* ViewController.swift in Sources */,
+				5EC2BFF7243197230054D7E5 /* NibLoadable.swift in Sources */,
 				5EC2BFDD243189E40054D7E5 /* AppDelegate.swift in Sources */,
 				5EC2BFDF243189E40054D7E5 /* SceneDelegate.swift in Sources */,
 			);
